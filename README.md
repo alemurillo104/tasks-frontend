@@ -9,7 +9,7 @@
 -Flutter 3.10.5
 -Dart 3.0
 ```
-Note: Before running the frontend project, make sure the tasks-backend is running to make this work properly.
+Note: The [Tasks Backend](https://github.com/alemurillo104/tasks-backend) was deployed in heroku server, go to the repository for more details.
 
 ## Installation instructions
 
