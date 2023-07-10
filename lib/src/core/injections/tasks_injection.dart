@@ -1,7 +1,7 @@
 import 'package:frontend/src/features/tasks/repository/task_repository.dart';
 import 'package:get_it/get_it.dart';
 
-import '../../features/tasks/ui/bloc/tasks_bloc.dart';
+import '../../features/tasks/bloc/tasks_bloc.dart';
 
 class TaskInjection {
   static GetIt instance = GetIt.instance;

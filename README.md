@@ -1,16 +1,40 @@
-# frontend
+# Tasks Frontend App
 
-A new Flutter project.
+## Technologies used
 
-## Getting Started
+`Flutter`, `Dart`.
 
-This project is a starting point for a Flutter application.
+## Required installations
+```
+-Flutter 3.10.5
+-Dart 3.0
+```
+Note: Before running the frontend project, make sure the tasks-backend is running to make this work properly.
 
-A few resources to get you started if this is your first Flutter project:
+## Installation instructions
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Execute the following commands:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Clone the repository 
+```
+- git clone https://github.com/alemurillo104/tasks-frontend.git
+```
+2. Go to the project directory
+```
+- cd tasks-frontend/
+```
+3. Install dependencies
+```
+- flutter pub get
+```
+4. Select a device to run the project
+```
+- The app is available to run un Android, iOS, web, windows.
+```
+5. Run the project
+```
+- flutter run -d chrome
+```
+Note: We're going to run the project in web using Chrome.
+
+Done!.

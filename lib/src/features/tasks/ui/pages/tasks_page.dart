@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:frontend/src/core/utils/layout/dimensions.dart';
-import 'package:frontend/src/features/tasks/ui/bloc/tasks_bloc.dart';
 
 import '../../../../core/injections/tasks_injection.dart';
 import '../../../../core/utils/theme/theme.dart';
+import '../../bloc/tasks_bloc.dart';
 import '../widgets/tasks_list_widget.dart';
 
 class TasksPage extends StatefulWidget {

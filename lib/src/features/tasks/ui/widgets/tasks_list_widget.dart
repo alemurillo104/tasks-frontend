@@ -4,7 +4,8 @@ import 'package:frontend/src/core/helpers/string_to_enum.dart';
 import 'package:frontend/src/core/utils/theme/sizes.dart';
 
 import '../../../../core/utils/layout/dimensions.dart';
-import '../bloc/tasks_bloc.dart';
+import '../../bloc/tasks_bloc.dart';
+import '../../model/task_model.dart';
 import 'item_list_widget.dart';
 
 class TaskListWidget extends StatelessWidget {
@@ -17,6 +18,7 @@ class TaskListWidget extends StatelessWidget {
     return BlocBuilder<TasksBloc, TasksState>(
       builder: (context, state) {
         if (state.status == GetTaskSt.success) {
+          final List<Task> tasks = state.tasks;
           return GridView(
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: (screenWidth > narrowWidth)
@@ -26,7 +28,7 @@ class TaskListWidget extends StatelessWidget {
               mainAxisSpacing: AppSizes.miniumPadding,
               mainAxisExtent: AppSizes.cardHeight,
             ),
-            children: state.tasks
+            children: tasks
                 .map(
                   (item) => ItemListWidget(
                     width: screenWidth * 0.4,
